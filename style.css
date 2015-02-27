@@ -1,0 +1,145 @@
+/* Header Styles */
+
+header {
+	height: 450px;
+	background: url(img/_hero-bg.jpg) center center;
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+header .logo {
+	height:50px;
+	width:50px;
+	background: #999;
+	float:left;
+	margin: 10px 0 0 30px;
+}
+
+header a {
+	display: inline-block;
+	margin-left: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	color: rgba(0,0,0,0.7);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+header a:hover {
+	color: rgba(0,0,0,1);
+	}
+
+header h1 {
+	font-size: 72px;
+	font-weight: 700;
+	color:white;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.05em;
+	margin-bottom: 20px;
+	clear:both;
+	padding-top: 110px;
+}
+
+header h1 span {
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	border:white solid 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.kicker {
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	color:white;
+	letter-spacing: 0.05em;
+
+}
+
+header nav {
+	float: right;
+	margin: 30px 30px 0 0;
+
+}
+
+/* End Header Section */
+
+
+
+/* Footer Styles */
+footer {
+	background: url(img/_hero-bg.jpg) center center;
+	background-size: cover;
+}
+
+/*clearfix*/
+.btcf:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+footer .logo {
+	height: 50px;
+	width: 50px;
+	background: #999;
+	float: left;
+	margin: 10px;
+	padding: 0;
+}
+
+footer .lockup {
+	padding: 50px 30px;
+}
+
+.content-wrap {
+	float: left;
+}
+
+.copyright {
+	margin:0;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: rgba(0,0,0,.4);
+	float: left;
+	margin-left: 30px;
+}
+
+footer a {
+	display: inline-block;
+	margin-left: 30px;
+	padding-top: 15px;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.4);
+	text-decoration: none;
+}
+footer a:hover {
+	color: rgba(0,0,0,1);
+	}
+
+/*End Footer*/
+
+
+/*About Styles*/
+section {
+	text-align: center;
+}
+section.h3 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.face-lockup {
+	max-width: 780px;
+	display:-webkit-box;
+	display: -moz-box;
+	display: box;
+	display:flex;
+}
+
+/* End About */
