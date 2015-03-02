@@ -74,12 +74,6 @@ footer {
 	background-size: cover;
 }
 
-/*clearfix*/
-.btcf:after{
-	content: "";
-	display: table;
-	clear: both;
-}
 
 footer .logo {
 	height: 50px;
@@ -157,23 +151,39 @@ section h3 {
 	order: 3;
 }
 .icon {
-	height:100px;
+	height: 75px;
+	width: 75px;
+	padding-top:12px;
+}
+.icon-html {
+	order: 1;
+	height: 100px;
 	width: 100px;
 	background-color: #e5eaee;
 	border-radius: 50%;
 }
-.icon-pencil {
-	order: 1;
-}
-.icon-mouse {
+.icon-css {
 	order: 2;
+	height: 100px;
+	width: 100px;
+	background-color: #e5eaee;
+	border-radius: 50%;
 }
-.icon-browser {
+.icon-js {
 	order: 4;
+	height: 100px;
+	width: 100px;
+	background-color: #e5eaee;
+	border-radius: 50%;
 }
-.icon-video {
+.icon-sql {
 	order: 5;
+	height: 100px;
+	width: 100px;
+	background-color: #e5eaee;
+	border-radius: 50%;
 }
+
 .blurb {
 	max-width: 620px;
 	padding:0 15px;
@@ -183,3 +193,10 @@ section h3 {
 	font-weight: 300;
 }
 /* End About */
+
+/*clearfix*/
+.btcf:after{
+	content: "";
+	display: table;
+	clear: both;
+}
