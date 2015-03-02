@@ -8,12 +8,13 @@ header {
 }
 
 header .logo {
-	height:50px;
-	width:50px;
-	background: #999;
-	float:left;
-	margin: 10px 0 0 30px;
+	height: 75px;
+	width: 75px;
+	float: left;
+	margin: 10px;
+	padding: 0;
 }
+
 
 header a {
 	display: inline-block;
@@ -83,7 +84,6 @@ footer {
 footer .logo {
 	height: 50px;
 	width: 50px;
-	background: #999;
 	float: left;
 	margin: 10px;
 	padding: 0;
@@ -127,11 +127,14 @@ footer a:hover {
 section {
 	text-align: center;
 }
-section.h3 {
+section h3 {
 	text-align: center;
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding: 100px 0 30px;
+	font-family:sans-serif;
 }
 
 .face-lockup {
@@ -139,7 +142,44 @@ section.h3 {
 	display:-webkit-box;
 	display: -moz-box;
 	display: box;
-	display:flex;
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	justify-content:center;
+	justify-content: space-around;
 }
 
+.face-img {
+	width: 200px;
+	height:200px;
+	border-radius: 50%;
+	background-color: black;
+	order: 3;
+}
+.icon {
+	height:100px;
+	width: 100px;
+	background-color: #e5eaee;
+	border-radius: 50%;
+}
+.icon-pencil {
+	order: 1;
+}
+.icon-mouse {
+	order: 2;
+}
+.icon-browser {
+	order: 4;
+}
+.icon-video {
+	order: 5;
+}
+.blurb {
+	max-width: 620px;
+	padding:0 15px;
+	margin:50px auto;
+	font-size: 24px;
+	text-align: center;
+	font-weight: 300;
+}
 /* End About */
