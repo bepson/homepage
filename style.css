@@ -183,7 +183,23 @@ section h3 {
 	background-color: #e5eaee;
 	border-radius: 50%;
 }
-
+@media screen and (max-width: 650px)
+{
+	.face-lockup {
+		display: block;
+		text-align: center;
+	}
+	div {
+		display: inline-block;
+	}
+	.face-img {
+		display: block;
+		background-position: center center;
+		width: 200px;
+		background-repeat: no-repeat;
+		margin: auto;
+	}
+}
 .blurb {
 	max-width: 620px;
 	padding:0 15px;
