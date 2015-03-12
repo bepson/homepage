@@ -46,80 +46,96 @@
 <!-- Work Section -->
 <section class="work-section btcf">
 	<h3 id="work">Work</h3>	
-	
-	<div class="thumb-container">
-		<a class="thumb-unit">
-				<div class="thumb-overlay">
-						<strong>First Thumb Explanation</strong>
-						<div class="zoom-icon"></div>
-				</div>
-		</a>
+	<div class="work-belt">
+<!-- Work thumbs to show on main page -->
+		<div class="thumb-wrap">
+			<div class="thumb-container">
+				<a class="thumb-unit">
+					<div class="thumb-overlay">
+							<strong>First Thumb Explanation</strong>
+							<div class="zoom-icon">
+							</div>
+					</div>
+				</a>
+			</div>
+			<div class="thumb-container">
+				<a class="thumb-unit">
+					<div class="thumb-overlay">
+							<strong>First Thumb Explanation</strong>
+							<div class="zoom-icon">
+							</div>
+					</div>
+				</a>
+			</div>
+			<div class="thumb-container">
+				<a class="thumb-unit">
+					<div class="thumb-overlay">
+							<strong>First Thumb Explanation</strong>
+							<div class="zoom-icon">
+							</div>
+					</div>
+				</a>
+			</div>
+			<div class="thumb-container">
+				<a class="thumb-unit">
+					<div class="thumb-overlay">
+							<strong>First Thumb Explanation</strong>
+							<div class="zoom-icon">
+							</div>
+					</div>
+				</a>
+			</div>
+			<div class="thumb-container">
+				<a class="thumb-unit">
+					<div class="thumb-overlay">
+							<strong>First Thumb Explanation</strong>
+							<div class="zoom-icon">
+							</div>
+					</div>
+				</a>
+			</div>
+			<div class="thumb-container">
+				<a class="thumb-unit">
+					<div class="thumb-overlay">
+							<strong>First Thumb Explanation</strong>
+							<div class="zoom-icon">
+							</div>
+					</div>
+				</a>
+			</div>
+			<div class="thumb-container">
+				<a class="thumb-unit">
+					<div class="thumb-overlay">
+							<strong>First Thumb Explanation</strong>
+							<div class="zoom-icon">
+							</div>
+					</div>
+				</a>
+			</div>
+			<div class="thumb-container">
+				<a class="thumb-unit">
+					<div class="thumb-overlay">
+							<strong>First Thumb Explanation</strong>
+							<div class="zoom-icon">
+							</div>
+					</div>
+				</a>
+			</div>
+		</div>
+<!--Details about thumb-container above -->
+		<div class="work-wrap">
+			<div class="work-container">
+				<div class="work-return"><img src="/img/icon-left.svg"/></div>
+				<h4>Do Work</h4>
+				<div style="height: 600px; width: 600px; background: #ccc;"></div>
+				<p>This is a description of the above picture.</p>
+			</div>
+		</div>
 	</div>
 
-	<div class="thumb-container">
-		<a class="thumb-unit">
-				<div class="thumb-overlay">
-						<strong>First Thumb Explanation</strong>
-						<div class="zoom-icon"></div>
-				</div>
-		</a>
-	</div>
 
-	<div class="thumb-container">
-		<a class="thumb-unit">
-				<div class="thumb-overlay">
-						<strong>First Thumb Explanation</strong>
-						<div class="zoom-icon"></div>
-				</div>
-		</a>
-	</div>
-
-	<div class="thumb-container">
-		<a class="thumb-unit">
-				<div class="thumb-overlay">
-						<strong>First Thumb Explanation</strong>
-						<div class="zoom-icon"></div>
-				</div>
-		</a>
-	</div>
-
-	<div class="thumb-container">
-		<a class="thumb-unit">
-				<div class="thumb-overlay">
-						<strong>First Thumb Explanation</strong>
-						<div class="zoom-icon"></div>
-				</div>
-		</a>
-	</div>
-
-	<div class="thumb-container">
-		<a class="thumb-unit">
-				<div class="thumb-overlay">
-						<strong>First Thumb Explanation</strong>
-						<div class="zoom-icon"></div>
-				</div>
-		</a>
-	</div>
-
-	<div class="thumb-container">
-		<a class="thumb-unit">
-				<div class="thumb-overlay">
-						<strong>First Thumb Explanation</strong>
-						<div class="zoom-icon"></div>
-				</div>
-		</a>
-	</div>
-
-	<div class="thumb-container">
-		<a class="thumb-unit">
-				<div class="thumb-overlay">
-						<strong>First Thumb Explanation</strong>
-						<div class="zoom-icon">
-						</div>
-				</div>
-		</a>
-	</div>
 </section>
+
 <!--End Work Section-->
 
 
@@ -178,7 +194,27 @@
 		<p class="copyright">All rights reserved, 2015</p> 
 		</div>
 </div>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	
+	$(function() {
+		workBelt();
+	})
+
+	function workBelt() {
+		$('.thumb-unit').click(function(){
+			$('.work-belt').css('left','-100%');
+			$('.work-container').show(800);
+		});
+
+		$('.work-return').click(function () {
+			$('.work-belt').css('left','0%');
+			$('.work-container').hide(800);
+			});
+	}
+</script>
 </footer>
+
 <!-- End Footer Section -->
 
 </html>

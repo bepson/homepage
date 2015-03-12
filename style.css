@@ -208,7 +208,7 @@ section h3 {
 		display: block;
 		text-align: center;
 	}
-	div {
+	div .icon-* {
 		display: inline-block;
 	}
 	.face-img {
@@ -401,5 +401,49 @@ input[type="submit"]:hover {
 	.thumb-unit{
 		width: 50%;
 }
+}
+.work-section {
+	overflow-x: hidden;
+}
+.work-belt {
+	width: 200%;
+	position: relative;
+	transition: left 500ms ease;
+}
+.thumb-wrap, .work-wrap {
+	width: 50%;
+	float: left;
+}
+.work-container {
+	max-width: 600px;
+	margin: 0px auto;
+	display: none;
+}
+.work-container img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+.work-container h4 {
+	color: rgb(127, 142, 155);
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 1.2;
+	font-family: sans-serif;
+}
+.work-return {
+	position: absolute;
+	display: block;
+	width: 40px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+.work-return:hover {
+	opacity: 1;
+}
+@media (max-width: 740px) {
+	.work-return {
+		display: inline;
+		position: relative;
+	}
 }
 /* End Work Styles */
