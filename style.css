@@ -32,7 +32,7 @@ header a:hover {
 header h1 {
 	font-size: 72px;
 	font-weight: 700;
-	color:white;
+	color: white;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 0.05em;
@@ -129,6 +129,7 @@ section h3 {
 	letter-spacing: 0.05em;
 	padding: 100px 0 30px;
 	font-family:sans-serif;
+	color: rgb(127, 142, 155);
 }
 
 .face-lockup {
@@ -141,6 +142,24 @@ section h3 {
 	align-items: center;
 	justify-content:center;
 	justify-content: space-around;
+}
+
+@media screen and (max-width: 650px){
+	.face-lockup {
+		display: block;
+		text-align: center;
+	}
+	.about div {
+		display: inline-block;
+	}
+	section div .face-img {
+		display: block;
+		background-position: center center;
+		width: 200px;
+		background-repeat: no-repeat;
+		margin: auto;
+		display: block;
+	}
 }
 
 .face-img {
@@ -207,6 +226,7 @@ section h3 {
 	font-size: 24px;
 	text-align: center;
 	font-weight: 300;
+	font-family: sans-serif;
 }
 /* End About */
 
@@ -216,3 +236,170 @@ section h3 {
 	display: table;
 	clear: both;
 }
+
+
+/*Contact Section */
+.contact {
+	background-color: rgba(150, 150, 150, 0.17);
+	font-family: sans-serif;
+}
+.contact h3 {
+	margin-top: 0;
+}
+.social-links {
+	max-width: 700px;
+	margin: 0px auto 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.social-links a {
+	display:block;
+	background: rgb(127, 142, 155);
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	color: white;
+	border-radius: 50%;
+	font-size: 28px;
+	text-decoration: none;
+	transition: transform 0.1s ease;
+}
+
+.social-links a:hover {
+	transform:scale(1.2);
+}
+
+.bar {
+	width: 250px;
+	height: 0px;
+	border-top: 4px solid rgb(127, 142, 155);
+	margin: 0px auto 75px;
+}
+
+.biglink {
+	display: inline-block;
+	text-align: center;
+	font-size: 72px;
+	font-weight: 300;
+	color: rgb(127, 142, 155);
+	text-decoration: none;
+	line-height: 1;
+	padding-bottom: 100px;
+}
+/* Email form styles */
+form {
+	max-width: 450px;
+	margin: 0 auto 100px;
+	padding: 0px 20px;
+}
+.contact-info-group label {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+}
+.contact-info-group label:nth-child(1) {
+	padding-right: 5px;
+}
+.contact-info-group label:nth-child(2) {
+	padding-left: 5px;
+}
+form label {
+	display: block;
+	margin-bottom: 10px;
+	text-align: left;
+	font-family: sans-serif;
+}
+
+form label span {
+	display: block;
+}
+
+form input, textarea {
+	border: 3px solid rgb(127, 142, 155);
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	appearance: none;
+}
+form input:focus, textarea:focus {
+	border-color: rgba(127, 142, 155, 0.27);
+	outline: none;
+}
+textarea {
+	height: 10em;
+}
+input[type="submit"] {
+	background: rgb(127, 142, 155);
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	width: 33%;
+}
+.submit-wrap {
+	text-align: right;
+}
+input[type="submit"]:hover {
+	background: rgba(127, 142, 155, 0.27);
+	border-color: rgba(127, 142, 155, 0.27);
+}
+/* End Email Form Styles */
+
+/* Work Section Styles */
+.work-section {
+	background: rgba(150, 150, 150, 0.17);
+}
+.work-section h3 {
+	margin: 0;
+}
+.thumb-container {
+	max-width: 960px;
+	margin: 0px auto;
+}
+.thumb-unit {
+	width: 25%;
+	height: 150px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: white;
+	overflow: hidden;
+	}
+.thumb-overlay {
+	position: absolute;
+	height:100%;
+	top: 100%;
+	bottom: null;
+	left: 0;
+	right: 0;
+	background: rgba(127, 142, 155, .5);
+	transition: top 0.2s linear;
+	text-align: center;
+	cursor: pointer;
+}
+.thumb-container .thumb-unit strong {
+	padding: 20px;
+	display: block;
+	color: white;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 1.2;
+}
+.thumb-unit:hover .thumb-overlay {
+	position: absolute;
+	top: 0%;
+	bottom: 0;
+	left:0;
+	right:0;
+}
+
+@media screen and (max-width: 760px) {
+	.thumb-unit{
+		width: 50%;
+}
+}
+/* End Work Styles */
